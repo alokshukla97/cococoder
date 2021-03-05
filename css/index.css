@@ -34,7 +34,7 @@ body {
 }
 .container {
   margin:20px auto;
-  width:94%;
+  width:61%;
   max-width:800px;
   column-count: 2;
   column-gap: 30px;
