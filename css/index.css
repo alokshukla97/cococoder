@@ -77,6 +77,15 @@ body {
 .container .challenge-box .desc p {
   margin-bottom:10px;
 }
+.container .challenge-box a {
+  padding:8px 20px;
+  background:#222;
+  color:#eee;
+  text-decoration:none;
+  cursor:pointer;
+  margin:10px 0px;
+  display:inline-block;
+}
 
 @media screen and (max-width: 768px) {
   .container .heading-box {
