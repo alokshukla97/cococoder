@@ -80,6 +80,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .container .heading-box {
-    padding:0px 20px 40px;
+    padding:0px 10px 40px;
   }
 }
