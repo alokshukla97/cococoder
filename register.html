@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale:1.0">
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+</head>
+<body>
+	<div class="header">
+		<div class="logo" onclick="openPage('./index.html')">
+			Cococoder
+		</div>
+	</div>
+	<div class="form">
+	  <div class="form-heading">
+	    <h2>Register</h2>
+	    <p>Competition details will be sent to your email address.</p>
+	  </div>
+	  <form onsubmit="validateForm(event)" method="POST" action="https://tweekus.com/c/gateway_c.php">
+		  <div class="form-element">
+		    <label for="fullname">Fullname</label>
+		    <input type="text" id="fullname" name="name" maxlength="100" required pattern="[A-Za-z ]{2,}" title="Enter valid fullname">
+		  </div>
+		  <div class="form-element">
+		    <label for="email">Email</label>
+		    <input type="email" id="email" name="email" maxlength="100" required>
+		  </div>
+		  <div class="form-element">
+		    <label for="challenge">Challenge</label>
+		    <select id="challenge" name="challenge" required>
+		      <option value="bug_hunting">Bug Hunting</option>
+		      <option value="web_designing">Web Designing</option>
+		      <option value="code_gladitor">Code Gladiator</option>
+		    </select>
+		  </div>
+		  <div class="form-element">
+		    <label for="phone">Phone</label>
+		    <input type="tel" id="phone" name="phone" maxlength="10" required pattern="[0-9]{10}" title="Enter valid phone number">
+		  </div>
+		  <div class="form-element">
+		    <button type="submit">Pay</button>
+		  </div>
+	  </form>
+	</div>
+
+	<script type="text/javascript" src="js/code.js"></script>
+</body>
+</html>
