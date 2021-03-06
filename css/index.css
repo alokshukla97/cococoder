@@ -88,6 +88,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width:90%
+  }
   .container .heading-box {
     padding:0px 10px 40px;
   }
